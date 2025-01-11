@@ -423,7 +423,7 @@ export default function Page() {
                             ) : (
                                 <>
                                     <p className="text-black/50 font-medium text-sm">
-                                        Don't have an account? &nbsp;
+                                        Don&apos;t have an account? &nbsp;
                                         <span
                                             onClick={() => setSignUp(true)}
                                             className="text-defaultBlue !opacity-100 cursor-pointer hover:underline"

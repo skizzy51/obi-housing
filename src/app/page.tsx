@@ -32,8 +32,7 @@ export default function Home() {
                             properties? Tired of having to deal with unreliable
                             agents and unnecessarily expensive prices and fees
                             to acquire a home in Nigeria? The solution to your
-                            problems have nimport Link from "next/link"ever been
-                            made easier.
+                            problems have never been made easier.
                         </p>
                         <div className="relative flex-shrink-0">
                             <Image

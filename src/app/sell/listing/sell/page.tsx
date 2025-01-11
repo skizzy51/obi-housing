@@ -397,7 +397,10 @@ export default function Page() {
                             {images.map((image, index) => {
                                 let urlImg = URL.createObjectURL(image)
                                 return (
-                                    <div className="relative overflow-visible flex-shrink-0">
+                                    <div
+                                        key={index}
+                                        className="relative overflow-visible flex-shrink-0"
+                                    >
                                         <Image
                                             onClick={() =>
                                                 setSelectedImage(index)

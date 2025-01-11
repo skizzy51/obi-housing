@@ -18,6 +18,7 @@ export default function Page() {
                         <div className="absolute bottom-0 flex gap-x-2 mx-auto">
                             {[1, 2, 3, 4, 5].map((num) => (
                                 <FaStar
+                                    key={num}
                                     size={40}
                                     color="#EFFF00"
                                     className="flex-shrink-0"

@@ -245,6 +245,7 @@ export default function Page({ params }: { params: { id: string } }) {
                                     <div className="flex gap-x-1.5">
                                         {[1, 2, 3, 4, 5].map((num) => (
                                             <FaStar
+                                                key={num}
                                                 size={20}
                                                 color="#EFFF00"
                                                 className="flex-shrink-0"
