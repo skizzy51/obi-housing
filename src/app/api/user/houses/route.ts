@@ -1,15 +1,14 @@
 import jwt, { JwtPayload } from "jsonwebtoken"
 import { connect } from "@/lib/db"
 import HouseModel from "@/models/House"
-import { NextApiRequest, NextApiResponse } from "next"
-import { NextResponse } from "next/server"
+import { NextRequest, NextResponse } from "next/server"
 import UserModel from "@/models/User"
 
 interface CustomJwtPayload extends JwtPayload {
     id: string
 }
 
-export async function GET(req: NextApiRequest, res: NextApiResponse) {
+export async function GET(req: NextRequest, res: NextResponse) {
     await connect()
     try {
         // const { id } = jwt.verify(
