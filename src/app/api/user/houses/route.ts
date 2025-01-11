@@ -9,7 +9,7 @@ interface CustomJwtPayload extends JwtPayload {
     id: string
 }
 
-export default async function GET(req: NextApiRequest, res: NextApiResponse) {
+export async function GET(req: NextApiRequest, res: NextApiResponse) {
     await connect()
     try {
         // const { id } = jwt.verify(

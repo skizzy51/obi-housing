@@ -2,7 +2,7 @@ import { connect } from "@/lib/db"
 import HouseModel from "@/models/House"
 import { NextResponse } from "next/server"
 
-export default async function GET() {
+export async function GET() {
     await connect()
 
     try {
