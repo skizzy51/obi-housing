@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    transition: all 0.2s ease-in-out;
+}
+
+body {
+    background-color: #ebf9ff;
+}
+body::-webkit-scrollbar {
+    width: 4.5px;
+    height: 4.5px;
+}
+body::-webkit-scrollbar-thumb {
+    box-shadow: none;
+    background-color: grey;
+    border-radius: 4.5px;
+}
+body::-webkit-scrollbar-track {
+    box-shadow: none;
+    background-color: transparent;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    box-shadow: none;
+    background-color: rgba(128, 128, 128, 0.616);
+    border-radius: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    box-shadow: none;
+    background-color: transparent;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.custom-scrollbar-low-opacity::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+.custom-scrollbar-low-opacity::-webkit-scrollbar-thumb {
+    box-shadow: none;
+    background-color: rgba(128, 128, 128, 0.196);
+    border-radius: 3px;
+}
+.custom-scrollbar-low-opacity::-webkit-scrollbar-track {
+    box-shadow: none;
+    background-color: transparent;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.second-landing-image {
+    background-image: url("../images/second-image-landing.png");
+    background-size: contain;
+}
+.second-landing-bg {
+    background-image: url("../images/second-landing-bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+.third-landing-image {
+    background-image: url("../images/third-image-landing.png");
+    background-size: contain;
+}
+.fourth-landing-image {
+    background-image: url("../images/fourth-image-landing.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.mapboxgl-map {
+    display: flex;
+}
+.mapboxgl-canvas {
+    /* width: 100% !important;
+    height: 100% !important; */
+}
+.mapboxgl-user-location-accuracy-circle {
+    z-index: 1 !important;
+}
+.mapboxgl-marker-anchor-center {
+    z-index: 2;
+}
+.map-preview {
+    background-image: url("../images/map-preview.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.react-multi-carousel-dot button {
+    border: none !important;
+    background-color: #0048a6 !important;
+}
+.react-multi-carousel-dot--active button {
+    background: white !important;
+    width: 1.5rem !important;
+    border-radius: 5px !important;
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
